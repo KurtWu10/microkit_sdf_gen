@@ -31,7 +31,7 @@ jobs:
       - run: |
           echo "ZIG_PATH=$(dirname $(which zig))" >> $GITHUB_ENV
       - name: Build wheels
-        uses: pypa/cibuildwheel@v3.2.0
+        uses: pypa/cibuildwheel@v3.3.0
         env:
           CIBW_BUILD: 'cp312-*'
           CIBW_ARCHS_LINUX: 'x86_64'
