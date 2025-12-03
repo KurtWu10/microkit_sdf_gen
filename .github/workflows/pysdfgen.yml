@@ -3,10 +3,6 @@ name: Build Python package
 on:
   pull_request:
   push:
-    branches: [ "main" ]
-    tags:
-      # Run on version tags
-      - '*.*.*'
 
 env:
   ZIG_VERSION: 0.15.2
