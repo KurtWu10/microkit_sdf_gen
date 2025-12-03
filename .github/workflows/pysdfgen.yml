@@ -1,14 +1,11 @@
 name: Build Python package
-  
+
 on:
   pull_request:
   push:
-    tags:
-      # Run on version tags
-      - '*.*.*'
 
 env:
-  ZIG_VERSION: 0.15.2
+  ZIG_VERSION: 0.15.1
 
 jobs:
   build_wheels:
